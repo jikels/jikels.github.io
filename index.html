@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Ikels | Personal CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <button id="nav-toggle" aria-label="Toggle Navigation">&#9776;</button>
+    </header>
+    <section id="about">
+        <img id="profile-photo" src="profile.jpeg" alt="Joel Ikels">
+        <h1>Joel Ikels</h1>
+        <p class="justified-text">I‘m interested in developing use cases that facilitate learning machines to achieve complex goals by following observed principles of intelligence. My experience spans decentralized AI, planning with world models, reinforcement learning and data analytics. I am happily employed and am not searching for jobs but love to connect to open source communities and people pushing the boundaries of AI. Drop me a dm!</p>
+    </section>
+    <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-item">
+        <h3>Data Analyst</h3>
+        <p class="company-name"><span class="time-period">Feb 2024 - today</span></p>  
+    </div>
+    <div class="experience-item">
+        <h3>Research: Learning 2D Irregular Packing with Deep Reinforcement Learning</h3>
+        <p class="company-name">TRUMPF SE + Co. KG, <span class="time-period">Oct 2022 - Jul 2023</span></p>
+        <ul>
+            <li>Conducted research in deep reinforcement learning with a focus on sheet metal nesting for laser cutting applications.</li>
+            <li>Enhanced and developed model-free and hierarchical reinforcement learning algorithms that are jointly trained with computer vision models.</li>
+            <li>Designed and implemented virtual learning environments tailored to the specific use case.</li>
+            <li>Leveraged leading cloud computing platforms to effectively train and scale the developed algorithms across multiple resources.</li>
+        </ul>    
+    </div>
+    <div class="experience-item">
+    <h3>Research: Meta Learning using World Models and Planning</h3>
+    <p class="company-name">Karlsruhe Institute of Technology, <span class="time-period">Aug 2021 - Sep 2022</span></p>
+    <ul>
+        <li>Conducted research in the area of model-based meta-reinforcement learning.</li>
+        <li>Developed a planning algorithm that utilizes adaptable world models in virtual robotic environments.</li>
+        <li>Implemented, adapted, benchmarked, and tested reinforcement learning algorithms.</li>
+    </ul>
+    </div>
+    
+    <div class="experience-item">
+    <h3>Business Development: Decentralized Machine Learning</h3>
+    <p class="company-name">Prenode GmbH, <span class="time-period">Oct 2020 - Oct 2021</span></p>
+    <ul>
+        <li>Supporting the development of a product strategy for a decentralized machine learning solution.</li>
+        <li>Collaborating in the development of research projects with a focus on decentralized and federated machine learning.</li>
+        <li>Supporting project management in the area of federated machine learning.</li>
+        <li>Managing lead generation, lead management, and lead qualification.</li>
+    </div>
+    
+    <div class="experience-item">
+    <h3>Project Management: International Capacity Planning</h3>
+    <p class="company-name">Daimler AG, <span class="time-period">Sep 2018 - Feb 2020</span></p>
+    <ul>
+        <li>Planning, control, and monitoring of the Mercedes-Benz C-Class special equipment.</li>
+        <li>Reporting forecasting-system and -process activities to the responsible management.</li>
+        <li>Equipment forecasting for the Mercedes-Benz plants in East London, Tuscaloosa, Beijing, and Bremen.</li>
+        <li>Data analysis for decision making and optimization of order forecasting and capacity planning processes.</li>
+    </ul>
+    </div>
+    
+    </section>
+    
+    <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+        <h3>Learning Nesting with Deep Reinforcement Learning</h3>
+        <a href="https://publikationen.bibliothek.kit.edu/1000161043" target="_blank">
+            <img src="RL_Nest.png" alt="Short description of image" style="width:100%;max-width:600px;">
+        </a>
+        <p class="project-abstract">In manufacturing, nesting refers to the process of laying out irregular shaped patterns while optimizing for a certain constraint. As a result, nesting problems in industrial settings are primarily concerned with finding the optimal layout of parts to minimize both raw material waste and processing time. However, traditional nesting algorithms are time-inefficient, making it difficult to maintain operational efficiency. <br> By increasing computational efficiency, Reinforcement Learning (RL) can learn tasks where exhaustive search methods are infeasible, and is increasingly being used to outperform traditional methods in a variety of manufacturing disciplines. However, RL algorithms that seek to solve nesting or related packing problems are either time-inefficient, only applicable to simpler rectangle packing cases, or include constraints that make them unsuitable industrial application. <br> To address the time efficiency challenges of traditional and RL-based methods, I developed an RL algorithm that achieves performance comparable to nesting algorithms while being faster than state-of-the-art nesting software and search heuristics using the same computing hardware. At the same time, it eliminates major limitations of previously developed methods and demonstrates generalization capabilities by maintaining its performance on unseen shapes within its learned domain.</p>
+        <p>More details: <a href="https://publikationen.bibliothek.kit.edu/1000161043" target="_blank">Learning to Nest Irregular Two-Dimensional Parts Using Deep Reinforcement Learning</a>.</p>
+    </div>
+    <div class="project-item">
+        <h3>Meta Learning using World Models and Planning</h3>
+        <a href="https://github.com/jikels/mac" target="_blank">
+            <img src="mac.jpg" alt="Short description of image" style="width:100%;max-width:400px;">
+        </a>
+        <p class="project-abstract">In machine learning, meta-learning methods aim for fast adaptability to unknown tasks using prior knowledge. Model-based meta-reinforcement learning combines planning via world models with meta learning to apply this adaptive behavior to agents. However, adaption to unknown tasks does not always result in preferable agent behavior. <br> In this reasearch we introduced a controller that allows to apply a preferred robot behavior from one task to many similar tasks. To do this, it aims to find actions an agent has to take in a new task in order to reach a similar outcome as in a learned task. As a result, it alleviates the need to construct a reward function that enforces preferred behavior.</p>
+        <p>More details: <a href="https://github.com/jikels/mac" target="_blank">Robotic Control Using Model Based Meta Adaption</a>.</p>
+    </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <a href= "mailto:jikels.public@web.de">Send Email</a>
+    </section>
+    <footer>
+        <p>© Joel Ikels</p>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+          var navMenu = document.getElementById('nav-menu');
+          navMenu.classList.toggle('hidden');
+        });
+      });
+    </script>
+    <script>
+      window.addEventListener('scroll', function() {
+        var profilePhoto = document.getElementById('profile-photo');
+        if (window.scrollY > 50) { // Adjust the number based on when you want the photo to move
+          profilePhoto.classList.add('scrolled');
+        } else {
+          profilePhoto.classList.remove('scrolled');
+        }
+      });
+    </script>
+</body>
+</html>
