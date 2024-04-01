@@ -205,15 +205,16 @@ footer {
     text-align: justify;
 }
 
+/* 1. Shows the nav menu by default on larger screens */
+/* 2. Positions the toggle button out of sight */
+/* 
+@media (min-width: 768px) {
+   
+  #nav-menu {
+    display: block;
+  }
 
-/*@media (min-width: 768px) {
-   /*Shows the nav menu by default on larger screens */
-  /*#nav-menu {
-    /*display: block;
-  /*}
-
-  /* Positions the toggle button (hamburger menu) out of sight */
-  /*#nav-toggle {
+  #nav-toggle {
     display: none;
   }
 }*/
