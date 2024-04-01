@@ -45,7 +45,7 @@ nav {
   display: block;
 }
 
-#nav-toggle {
+/*#nav-toggle {
   position: fixed;
   top: 20px;
   left: 10px;
@@ -55,6 +55,7 @@ nav {
   font-size: 24px;
   cursor: pointer;
 }
+*/
 
 #profile-photo {
   width: 150px;       
@@ -72,7 +73,7 @@ nav {
     display: none;
 }
 
-nav ul {
+/*nav ul {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
@@ -88,6 +89,7 @@ nav ul li a {
   color: #333;
   display: block;
 }
+*/
 
 h1, h2 {
     color: #000;
