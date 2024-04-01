@@ -58,9 +58,9 @@ nav {
 
 #profile-photo {
   width: 150px;       
-  height: 150px;      /* Make sure width and height are equal to create a circle */
-  border-radius: 50%; /* This creates the round shape */
-  object-fit: cover;  /* This ensures the image covers the space without stretching */
+  height: 150px;      /* Width and height should be equal to create a circle */
+  border-radius: 50%; /* Create a round shape */
+  object-fit: cover;  /* Ensures the image covers the space without stretching */
   border: 3px solid #ffffff; /* Adds a white border around the image */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds shadow for depth */
   transition: right 0.5s, top 0.5s, width 0.5s, height 0.5s;
@@ -145,7 +145,7 @@ footer {
 
 .experience-item li::before {
     content: "•"; /* Adds a custom bullet point */
-    color: #007aff; /* Example color; change as needed */
+    color: #007aff; /* Set color */
     font-weight: bold; /* Makes the bullet point bold */
     display: inline-block; 
     width: 1em; /* Ensures alignment of list items */
@@ -154,7 +154,7 @@ footer {
 
 .experience-item img {
     margin-top: 0px; /* Space between the abstract and the image */
-    border-radius: 10px; /* Optional: adds rounded corners to the image */
+    border-radius: 10px; /* Adds rounded corners to the image */
 }
 
 .experience-item a {
@@ -187,11 +187,11 @@ footer {
 
 .project-item img {
     margin-top: 3px;
-    border-radius: 10px; /* Adds rounded corners to the image */
+    border-radius: 10px;
 }
 
 .project-item a {
-    text-decoration: none; /* Removes underline from links */
+    text-decoration: none;
     color: #007aff;
 }
 
@@ -203,16 +203,15 @@ footer {
     text-align: justify;
 }
 
-@media (min-width: 768px) {
-  /* Show the nav menu by default on larger screens */
-  #nav-menu {
-    display: block;
-  }
 
-  /* Position the toggle button (hamburger menu) out of sight */
-  #nav-toggle {
+/*@media (min-width: 768px) {
+   /*Shows the nav menu by default on larger screens */
+  /*#nav-menu {
+    /*display: block;
+  /*}
+
+  /* Positions the toggle button (hamburger menu) out of sight */
+  /*#nav-toggle {
     display: none;
   }
-}
-
-
+}*/
